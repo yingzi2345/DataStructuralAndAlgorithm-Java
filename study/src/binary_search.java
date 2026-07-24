@@ -2,7 +2,7 @@ public class binary_search {
     public static Integer binarySearch(int[] arr, int item) {
         //二分查找
         int low = 0;
-        int high = arr.length - 1;
+        int high = arr.length - 1;//-1
 
         while (low <= high) {
             // 计算中间下标，整除
