@@ -26,8 +26,8 @@ public class binary_search {
     }
 
     public static void main(String[] args) {
-        int[] my_list = {1, 3, 5, 7, 9};//数组必须是有序的
-        System.out.println(binarySearch2(my_list, 3));
+        int[] my_list = {1, 3, 5, 7, 9,11};//数组必须是有序的
+        System.out.println(binarySearch2(my_list, 7));
         System.out.println(binarySearch2(my_list, -1));
     }
 
@@ -40,7 +40,7 @@ public class binary_search {
             int midd = (lo + h) / 2;
             int guesss = arr[midd];
             if (guesss == itme) {
-                return midd;
+                return guesss;
             } else if (guesss > itme) {
                 h = midd - 1;
             } else {
