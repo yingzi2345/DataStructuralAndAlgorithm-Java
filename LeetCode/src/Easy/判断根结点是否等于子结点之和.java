@@ -1,20 +1,21 @@
 package Easy;
 
 
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-    TreeNode() {}
-    TreeNode(int val) { this.val = val; }
-    TreeNode(int val, TreeNode left, TreeNode right) {
-        this.val = val;
-        this.left = left;
-        this.right = right;
-    }
-}
+public class 判断根结点是否等于子结点之和 {
 
-class Solution26081202 {
+    static class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
+        TreeNode() {}
+        TreeNode(int val) { this.val = val; }
+        TreeNode(int val, TreeNode left, TreeNode right) {
+            this.val = val;
+            this.left = left;
+            this.right = right;
+        }
+    }
+
     public boolean checkTree(TreeNode root) {
         /*int leftVal = root.left.val;
         int rightVal = root.right.val;
@@ -27,9 +28,6 @@ class Solution26081202 {
         }*/
         return root.val == root.left.val + root.right.val;//最简写法
     }
-}
-
-public class 判断根结点是否等于子结点之和 {
 
     public static void main(String[] args) {
         // 测试用例1：[10,4,6] 预期true
@@ -37,7 +35,7 @@ public class 判断根结点是否等于子结点之和 {
         TreeNode right1 = new TreeNode(6);
         TreeNode root1 = new TreeNode(10, left1, right1);
 
-        Solution26081202 sol = new Solution26081202();
+        判断根结点是否等于子结点之和 sol = new 判断根结点是否等于子结点之和();
         boolean res1 = sol.checkTree(root1);
         System.out.println("测试1结果：" + res1);
 
